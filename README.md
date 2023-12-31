@@ -1,20 +1,22 @@
-# Grails Web Profile
+# Grace Web Profile
 
-A profile for creating standard Grails web applications, with popular CSS framework **Bootstrap**.
+[![Build Status](https://github.com/grace-profiles/web-bootstrap/workflows/Grace%20CI/badge.svg)](https://github.com/grace-profiles/web-bootstrap/actions)
 
-## Grails Version
+A profile for creating standard Grace web applications, with popular CSS framework **Bootstrap**.
 
-- Grails **5.0.0**
-- Grails Base Profile **5.0.6**
-- Grails Scaffolding Plugin **4.1.0**
-- Grails Fields Plugin **3.0.0.RC1**
+## Grace Version
+
+- Grails **2022.0.0**
+- Grails Base Profile **2022.0.0**
+- Grails Scaffolding Plugin **5.0.0**
+- Grails Fields Plugin **5.0.0**
 
 ## Usage
 
 ### Build Profile
 
 ```
-git clone https://github.com/rainboyan/web-bootstrap.git
+git clone https://github.com/grace-profiles/web-bootstrap.git
 cd web-bootstrap
 ./gradlew publishToMavenLocal
 ```
@@ -26,7 +28,7 @@ cd web-bootstrap
 Generated project with default features, included `hibernate5`, `events`, `geb2`, `gsp`, `asset-pipeline`, `fields`, `jquery`, `bootstrap`.
 
 ```
-grails create-app --profile org.grails.profiles:web-bootstrap:5.0.0-SNAPSHOT org.grails.demo.web-bootstrap-demo
+grails create-app --profile org.graceframework.profiles:web-bootstrap:2022.0.0-SNAPSHOT org.graceframework.demo.web-bootstrap-demo
 cd web-bootstrap-demo
 grails run-app
 ```
@@ -36,7 +38,7 @@ grails run-app
 Generated project with features, included `hibernate5`, `events`, `geb2`, `gsp`, `asset-pipeline`, `fields`, `jquery`, `bootstrap-sass`.
 
 ```
-grails create-app --profile org.grails.profiles:web-bootstrap:5.0.0-SNAPSHOT --features hibernate5,events,geb2,jquery,bootstrap-sass org.grails.demo.web-bootstrap-sass-demo
+grails create-app --profile org.graceframework.profiles:web-bootstrap:2022.0.0-SNAPSHOT --features hibernate5,events,geb2,jquery,bootstrap-sass org.grails.demo.web-bootstrap-sass-demo
 cd web-bootstrap-sass-demo
 npm install
 npm run build
@@ -45,26 +47,14 @@ grails run-app
 
 ## What's New
 
-### 5.0.0-SNAPSHOT
+### 2022.0.0-SNAPSHOT
 
-* Update Grails 5.0
-* Grails Base Profile 5.0.6
-* Grails Scaffolding Plugin 4.1.0
 * Update Bootstrap v5.1.3, Popper 2.10.2
-* Update Bootstrap Icons v1.8.1
-* Feature `popper` is optional now, Use `bootstrap.bundle.js` include it
-* Support Bootstrap SASS, Use [DartSass](https://sass-lang.com/dart-sass) in place of [Node Sass](https://sass-lang.com/blog/libsass-is-deprecated)
-
-### 4.0.0
-
-* Update Grails 4.0
-* Grails Base Profile 4.0.4
-* Grails Scaffolding Plugin 4.0.0.RC1
-* Grails Fields Plugin 3.0.0.RC1
 * Update jQuery 3.6.0, Bootstrap 4.6.1
 * Update Grails Scaffolding and Fields default templates
 * Support Bootstrap form component, powerful grid system and responsive layout
-* Support Bootstrap Icons v1.8
+* Update Bootstrap Icons v1.8.1
+
 * Support Bootstrap with SASS and NPM
 * Support Bootswatch themes
 * Add Bootstrap taglib, support paginate and datePicker with more options
@@ -75,15 +65,14 @@ grails run-app
 * Add Themes menu
 * Remove unsed css in main.css and grails.css
 * Remove unsed skin images
+* Feature `popper` is optional now, Use `bootstrap.bundle.js` include it
+* Support Bootstrap SASS, Use [DartSass](https://sass-lang.com/dart-sass) in place of [Node Sass](https://sass-lang.com/blog/libsass-is-deprecated)
+
 
 ## Links
 
-- [Grails](https://grails.org)
-- [Grails Github](https://github.com/grails)
-- [Grails Fiedls Plugin](https://grails-fields-plugin.github.io/grails-fields/)
-- [Grails Web Profile](https://github.com/grails-profiles/web)
-- [Grails Web Bootstrap Profile](https://github.com/rainboyan/web-bootstrap)
-- [Grails Web Bootstrap Demo](https://github.com/rainboyan/scaffold-bootstrap-layout-demo)
+- [Grace Framework](https://github.com/graceframework/grace-framework)
+- [Grace Web Bootstrap Profile](https://github.com/grace-profiles/web-bootstrap)
 - [Bootstrap](https://getbootstrap.com)
 - [Bootstrap npm starter](https://github.com/twbs/bootstrap-npm-starter)
 - [Bootswatch](https://bootswatch.com)
